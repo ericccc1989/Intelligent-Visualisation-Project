@@ -5,8 +5,52 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <meta name="description" content="" />
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
-  <h1>Hello, world!</h1>
+  <img src="images/background1.jpeg" class="background1">
+  <div class="header">
+    <ion-icon name="menu-outline" class="menu" onclick="openNav()"></ion-icon>
+    <p class="tag">DECO3100_A3</p>
+  </div>
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Clients</a>
+    <a href="#">Contact</a>
+  </div>
+  <div class="container">
+    <h1>How does the popularization of electric vehicles help China manage its CO2 emission?</h1>
+    <button>Explore</button>
+    <p class="intro">China is well-known as the biggest country of CO2 emission in the past few decades. Electricity and heat generation, industrial activities, and transportation are some of the main reasons for that. However, in recent few years, the growth of CO2 emissions has been controlled effectively, especially in the transport sector. We cannot deny that this is somehow related to the popularisation of the electric vehicle in this Asian country.</p>
+    <div class="part1">
+      <div class="left">
+        <h2>Fighting Against CO2 Emission</h2>
+        <h3>Situation of CO2 Emission in China</h3>
+        <p>When China entered the 21st century, urbanization vastly changed people's life quality but caused much more pollution at the same time. The construction, industrial, and transport activities here produce a large amount of CO2 and GHG, and this made China became the world's largest carbon footprint country in 2004. In 2016, China's CO2 emission amount was 9127.9 Mt, which is 29% of the world's total. In comparison, the second-largest CO2 emission country the USA contributes 14%, and the third-largest country, India contributes 7% of the world total. </p>
+        <div class="chart_container1">
+          <canvas id="chart1"></canvas>
+        </div>
+      </div>
+      <div class="line"></div>
+      <div class="right">
+        <img src="images/svg_02_usa.svg" class="usa">
+        <img src="images/svg_03_russia.svg" class="russia">
+        <img src="images/svg_04_japan.svg" class="japan">
+        <img src="images/svg_05_germany.svg" class="germany">
+        <img src="images/svg_06_canada.svg" class="canada">
+        <img src="images/svg_01_china.svg" class="china">
+        <p>Construction-related activities in China help its infrastructure in the transport sector grow fastly. Private vehicles, public transport, and transit vehicles support people's daily life and work here. A large population base means that the CO2 emission in the transport sector also can not be a small number. If we look at how each sector contributes to China's CO2 emission, besides electricity and heat generation and industrial activities, transportation is the third-largest sector of CO2 emission.</p>
+      </div>
+    </div>
+  </div>
 </body>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@3.8.0/dist/chart.min.js"></script>
+<script src="script.js"></script>
 </html>

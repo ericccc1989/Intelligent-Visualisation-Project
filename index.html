@@ -1,32 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Hello, world!</title>
+  <!--Name:Zhiyuan Zhou(Eric) StudentID:490599189 Unikey:zzho0018-->
+  <!--Welcome to my DECO3100 A3 Intelligent Visualisation Project. This is the html page of my project web.--> 
+  <!--The main tools for building this project web is Chart.js. All of the charts in this web is based on it.-->  
+  <!--This is the title and favicon of the page-->
+  <title>How does the popularization of electric vehicles help China manage its CO2 emission?</title>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <meta name="description" content="" />
   <link href="style.css" rel="stylesheet" type="text/css" />
+  <!--This is the link that imports fonts from google, since I wanna use 'Lato' as my main font style-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
+  <!--The background of the intro is based on this electric vehicle images-->
   <img src="images/background1.jpeg" class="background1">
   <div class="header">
     <ion-icon name="menu-outline" class="menu" onclick="openNav()"></ion-icon>
     <p class="tag">DECO3100_A3</p>
   </div>
-  <div id="mySidenav" class="sidenav">
+  <!--This side nav code is based on example provided in W3schools. It aims
+    to provide scrolling access to each part in a quicker way. https://www.w3schools.com/howto/howto_js_sidenav.asp-->
+  <div id="mySidenav" class="sidenav">s
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <a href="#">About</a>
-    <a href="#">Services</a>
-    <a href="#">Clients</a>
-    <a href="#">Contact</a>
+    <a href="#" onclick="topFunction1()">Fighting Against CO2 Emission</a>
+    <a href="#" onclick="topFunction2()">The EV Revolution</a>
+    <a href="#" onclick="topFunction3()">Reasons behind the rise </a>
+    <a href="#" onclick="topFunction4()">The change</a>
   </div>
+  <!--The container div is the main content of my project web-->
   <div class="container">
+    <!--This is intro part in html. The explore button is also another way to scroll and access the first part of the content.-->
     <h1>How does the popularization of electric vehicles help China manage its CO2 emission?</h1>
-    <button>Explore</button>
+    <button onclick="topFunction1()">Explore</button>
     <p class="intro">China is well-known as the biggest country of CO2 emission in the past few decades. Electricity and heat generation, industrial activities, and transportation are some of the main reasons for that. However, in recent few years, the growth of CO2 emissions has been controlled effectively, especially in the transport sector. We cannot deny that this is somehow related to the popularisation of the electric vehicle in this Asian country.</p>
+    <!--Each individual part below will be a structure combing by a 'left div' and a 'right div'. By styling them on CSS file, the content will be presented on web nicely-->
     <div class="part1">
       <div class="left">
         <h2>Fighting Against CO2 Emission</h2>
@@ -44,13 +55,91 @@
         <img src="images/svg_05_germany.svg" class="germany">
         <img src="images/svg_06_canada.svg" class="canada">
         <img src="images/svg_01_china.svg" class="china">
-        <p>Construction-related activities in China help its infrastructure in the transport sector grow fastly. Private vehicles, public transport, and transit vehicles support people's daily life and work here. A large population base means that the CO2 emission in the transport sector also can not be a small number. If we look at how each sector contributes to China's CO2 emission, besides electricity and heat generation and industrial activities, transportation is the third-largest sector of CO2 emission.</p>
+        <p class="part1_p">Construction-related activities in China help its infrastructure in the transport sector grow fastly. Private vehicles, public transport, and transit vehicles support people's daily life and work here. A large population base means that the CO2 emission in the transport sector also can not be a small number. If we look at how each sector contributes to China's CO2 emission, besides electricity and heat generation and industrial activities, transportation is the third-largest sector of CO2 emission.</p>
       </div>
+    </div>
+    <div class="part2">
+      <div class="chart_container2">
+        <canvas id="chart2"></canvas>
+      </div>
+      <p>Although dealing with CO2 emission in China seems like an impossible mission, we can still find the growth rate of total CO2 emission in the recent few years is much slower than before. The year change rate had even come to a negative number of -0.3% for the first time(which means emission is decreasing). Is it related to the electric vehicle? What about the EV market in these years?</p>
+    </div>
+    <div class="part3">
+      <div class="left">
+        <h2>The EV Revolution</h2>
+        <h3>How did the EVs Market in China grow rapidly?</h3>
+        <p>In 2010, there were only 17,000 electric vehicles on the roads in the whole world. China wasn't a leading country on EVs stock at that time. The EVs stock in China was 32.2 thousand vehicles in 2013, and this is a much smaller number compared with the USA and Japan. However, it grows rapidly to 334.9 million vehicles in 2019, which is 47% of the world's total stock. The electric vehicle is starting to replace traditional ICE vehicles, and China may be the first country to enter the electric transport era.</p>
+        <div class="chart_container4">
+          <canvas id="chart4"></canvas>
+        </div>
+      </div>
+      <div class="line"></div>
+      <div class="right">
+        <div class="chart_container3">
+          <canvas id="chart3"></canvas>
+        </div>
+        <p class="part3_p">The Chinese government also has a clear plan for its future EV development. In the stated policy scenario released by IEA, China is going to have a much more systematic industry in 2030. The electric LDV will possess 40% of the total stock, and the electric bus will possess 60% of the total stock at that time. Surprisingly, all the two-wheel vehicles will be electric vehicles by 2030 in China.</p>
+      </div>
+    </div>
+    <div class="part4">
+      <div class="left">
+        <img src="images/bus.jpeg">
+      </div>
+      <div class="right">
+        <h2>Electric bus in Guangzhou, Guangdong Province</h2>
+        <h3>November 15, 2021</h3>
+        <p>This is a photo of an electric bus in Guangzhou. In 2021, electric public transport was already really common in every major Chinese city. They have already replaced over half of the traditional public transport. The green license plate became a unique symbol of EVs in China.</p>
+      </div>
+      </div>
+    <div class="part5">
+      <h4>Reasons behind the rise of EVs market in China:</h4>
+        <div class="row1">
+          <div>
+            <img src="images/svg_07_pollution.svg">
+            <h5>CO2&GHG Emission:</h5>
+            <p>A large population base in China is the main reason for high CO2&GHG emissions here. This country's economy and citizens' life is relying on transportation and mobility. Traditional ICE cars inevitably produce CO2 and other greenhouse gases. However, high pollution and emission are not appropriate for a country's long-term sustainable development. Electric vehicles have become a natural solution for ICE's replacement.</p>
+          </div>
+          <div>
+            <img src="images/svg_08_oil.svg">
+            <h5>Gasoline Price:</h5>
+            <p>The crude oil source in China relies heavily on other foreign countries such as Saudi Arabia and Russia. This made the Asian country become the world's largest crude oil imports country. In addition, the oil tax is an important part of the government's income. Thus, the gasoline price in China gradually becomes unaffordable for some families. This was even worse when the covid-19 pandemic outbreak happened in 2020. For a large number of people, an electric vehicle without oil costs seems like a better choice for them. </p>
+          </div>
+        </div>
+        <div class="row2">
+          <div>
+            <img src="images/svg_09_car.svg">
+            <h5>Ride-Hailing Service:</h5>
+            <p>The ride-hailing service market in China is very common and advanced, and traditional taxi service is gradually being replaced by it. Most citizens like it because of its low cost and convenience. Using the electric vehicle for ride-hailing service is already popularized, and drivers and companies are all willing to use it due to its low budget and safety. Some EV manufacturers, such as Geely Auto, also release their own ride-hailing services. </p>
+          </div>
+          <div>
+            <img src="images/svg_10_license.svg">
+            <h5>Government Policy:</h5>
+            <p>In most of the major cities in China, traffic restriction is really common. The government uses this policy to release the traffic pressure in the city. Blue license plate(traditional ICE car) owners cannot drive their car on the road in one day each week. However, green license plate (EV car) owners are not limited by this policy. Besides this, the welfare of buying an electric vehicle is much better than buying a traditional ICE car. Those policies attract a large number of customers.</p>
+          </div>
+        </div>
+    </div>
+    <div class="part6">
+      <div class="left">
+        <h2>The change</h2>
+        <h3>Does Electric Vehicles Really Effective?</h3>
+        <p>All the facts are supported by real data. If we take a look at China's EVs stock column graph, the number of electric vehicles has an obvious growth each year. For the total CO2 emissions, it is hard to directly tell the change number each year directly from a line graph. That is why we also need to generate an additional change value from it. Yearly change is the emission value this year minus the emission value in the previous year. If we made yearly change value into a line graph and compare it with EVs stock, it is clear that with the increase of EVs stock in China, the yearly change of CO2 emissions is reducing. In other words, electric vehicles are helping China controls its CO2 emissions.</p>
+      </div>
+      <div class="line"></div>
+      <div class="right">
+        <div class="chart_container5">
+          <canvas id="chart5"></canvas>
+        </div>
+      </div>
+    </div>
+    <h6>The Future</h6>
+    <p class="outro">Due to the condition in China, the EVs have already been popularized in this Asian country, and China has become the leading country in the EVs market for many years. For the purpose of sustainable development, the electric vehicle is the best solution for controlling CO2 emissions in the transportation sector. For a short time, there is still a large space for the electric vehicle market to grow due to its technique shortcoming. However, all the countries should pay attention to the potential of electric vehicles. One day the technology of electric vehicles will be mature and comprehensive enough that it can replace ICE vehicles completely. China will also be playing an important role in it.</p>
     </div>
   </div>
 </body>
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<!--This is script that imports external icons from https://ionic.io/ionicons.-->
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<!--This is the script that imports Chart.js CDN-->
 <script src="https://cdn.jsdelivr.net/npm/chart.js@3.8.0/dist/chart.min.js"></script>
 <script src="script.js"></script>
 </html>

@@ -32,10 +32,13 @@ const myChart1 = new Chart(chart1, {
               label:'Emission',
               data: [2996, 828, 365, 150, 109, 93, 4266],
               backgroundColor: [
+                  '#FFF',
                   '#E2684A',
-              ],
-              borderColor: [
-                  '#E2684A',
+                  '#FFF',
+                  '#FFF',
+                  '#FFF',
+                  '#FFF',
+                  '#FFF'
               ],
               borderWidth: 1
           }]
